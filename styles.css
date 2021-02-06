@@ -1,0 +1,36 @@
+#app{
+    max-height: 1000px;
+    height: 100%;
+}
+
+#text_input{
+    width: 95%;
+    border-radius: 3px;
+    border-style: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+form{
+    width: 100%;
+}
+
+#addTaskBtn{
+    border-style: solid;
+    border-width: 1.9px;
+    border-color: black;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+p{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+img{
+    width: 75%;
+}
