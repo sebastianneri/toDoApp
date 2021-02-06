@@ -103,12 +103,13 @@ ToDoList.prototype.createInput = function (){
     text_input.setAttribute("class", "border")
     text_input.setAttribute("type", "text");
     text_input.setAttribute("placeholder", "New Task...")
+    form.setAttribute("class", "d-flex justify-content-between")
     var button = document.createElement("button");
     button.setAttribute("id", "addTaskBtn")
     button.setAttribute("class", "border")
     button.style.borderRadius = "6px"
     button.setAttribute("type", "button")
-    button.setAttribute("class", "ml-2")
+    button.setAttribute("class", "ml-1")
     button.innerHTML = '<i class="fa fa-plus" aria-hidden="true"></i>';
     button.style.background = "none";
     form.appendChild(text_input);
