@@ -15,16 +15,16 @@ Task.prototype.createTask = function(){
     var list_element_content_margin = document.createElement("div")
     var text = document.createElement("p");
     text.setAttribute("class", "d-inline-flex mb-0");
-    text.setAttribute("id", "text" + this.id)
-    list_element_content.setAttribute("class", "d-flex justify-content-between")
+    text.setAttribute("id", "text" + this.id);
+    list_element_content.setAttribute("class", "d-flex justify-content-between");
     text.innerHTML = this.task_name;
     var check_btn = this.check;
     check_btn.setAttribute("class", "d-inline-flex mr-4");
     var remove = this.remove;
-    remove.setAttribute("class", "d-inline-flex")
+    remove.setAttribute("class", "d-inline-flex");
     list_element_content_margin.appendChild(check_btn);
     list_element_content_margin.appendChild(text);
-    list_element_content.appendChild(list_element_content_margin)
+    list_element_content.appendChild(list_element_content_margin);
     list_element_content.appendChild(remove);
     list_element.appendChild(list_element_content);  
     list_element.setAttribute("id", this.id); 
@@ -33,7 +33,7 @@ Task.prototype.createTask = function(){
 
 Task.prototype.createCheckBtn = function(){
     var checkbox = document.createElement("input");
-    checkbox.setAttribute("id", "CB" + this.id)
+    checkbox.setAttribute("id", "CB" + this.id);
     checkbox.setAttribute("type", "checkbox");
     return checkbox;
 }
@@ -91,7 +91,7 @@ ToDoList.prototype.addBtnListener = function(){
             new Task(text, self.counter, list_box);
             self.counter += 1;
         }else{
-            alert("No has introducido ningún valor")
+            alert("No has introducido ningún valor");
         }
     });
 }
@@ -100,16 +100,16 @@ ToDoList.prototype.createInput = function (){
     var form = document.createElement("form");
     var text_input = document.createElement("input");
     text_input.setAttribute("id", "text_input");
-    text_input.setAttribute("class", "border")
+    text_input.setAttribute("class", "border");
     text_input.setAttribute("type", "text");
     text_input.setAttribute("placeholder", "New Task...")
-    form.setAttribute("class", "d-flex justify-content-between")
+    form.setAttribute("class", "d-flex justify-content-between");
     var button = document.createElement("button");
-    button.setAttribute("id", "addTaskBtn")
-    button.setAttribute("class", "border")
-    button.style.borderRadius = "6px"
-    button.setAttribute("type", "button")
-    button.setAttribute("class", "ml-1")
+    button.setAttribute("id", "addTaskBtn");
+    button.setAttribute("class", "border");
+    button.style.borderRadius = "6px";
+    button.setAttribute("type", "button");
+    button.setAttribute("class", "ml-1");
     button.innerHTML = '<i class="fa fa-plus" aria-hidden="true"></i>';
     button.style.background = "none";
     form.appendChild(text_input);
@@ -126,25 +126,25 @@ ToDoList.prototype.skeleton = function(){
     var title = document.createElement("img");
     var list = document.createElement("ul");
     title.setAttribute("class", "w-25");
-    title.setAttribute("src", "logo.png")
+    title.setAttribute("src", "logo.png");
     input_box.setAttribute("class", "d-flex justify-content-end px-3");
-    list.setAttribute("id", "listUl")
-    list.setAttribute("class", "mb-0")
+    list.setAttribute("id", "listUl");
+    list.setAttribute("class", "mb-0");
     container.setAttribute("id", "container");
     title_box.setAttribute("id", "title_box");
-    title_box.setAttribute("class", "d-flex justify-content-center")
+    title_box.setAttribute("class", "d-flex justify-content-center");
     input_box.setAttribute("id", "input_box");
     list_box.setAttribute("id", "list_box");
-    list_box.setAttribute("class", "border m-3 p-3")
-    list_box.style.borderRadius = "8px"
-    container.setAttribute("class", "m-5")
+    list_box.setAttribute("class", "border m-3 p-3");
+    list_box.style.borderRadius = "8px";
+    container.setAttribute("class", "m-5");
     title_box.appendChild(title);
     list_box.appendChild(list);
     input_box.appendChild(this.input);
     container.appendChild(title_box);
     container.appendChild(list_box);
     container.appendChild(input_box);
-    return container
+    return container;
 }
 
 
